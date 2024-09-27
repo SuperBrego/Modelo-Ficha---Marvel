@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Marvel • Modelo Ficha</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="shortcut icon" href="media/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <div id="content">
+        <div class="a4-page">
+            <header id="image-header" title="Trocar Imagem" onclick="changeHeader()">
+                <h1><span class="character-title">Miquella of the Haligtree</span></h1>
+                <span class="character-title">Pure and Radiant, he wields love to shrive clean the hearts of men. There is nothing more terrifying.</span>
+            </header>
+            <!-- <button class="btn btn-primary" onclick="clearHeader()">apagar img</button> -->
+            <input type="file" id="fileInput" style="display: none;" accept="image/*" />
+            
+            <!-- Habilidades -->
+            <div id="abilities" class="container-fluid text-center"></div>
+            
+            <!-- Defesa | Poderes -->
+            <div id="defenses-powers">
+                <div id="defenses" class="col-3 text-center">
+                    <header><h3>Defesa</h3></header>
+                    
+                    <div class="defItem">
+                        <header>Esquivar</header>
+                        <div class="defRanks">
+                            <span>0</span>
+                            <span>(+0)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="defItem">
+                        <header>Aparar</header>
+                        <div class="defRanks">
+                            <span>0</span>
+                            <span>(+0)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="defItem">
+                        <header>Resistência</header>
+                        <div class="defRanks">
+                            <span>0</span>
+                            <span>(+0)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="defItem">
+                        <header>Fortitude</header>
+                        <div class="defRanks">
+                            <span>0</span>
+                            <span>(+0)</span>
+                        </div>
+                    </div>
+                    
+                    <div class="defItem">
+                        <header>Vontade</header>
+                        <div class="defRanks">
+                            <span>0</span>
+                            <span>(+0)</span>
+                        </div>
+                    </div>
+                </div>
+                <div id="power-list-page1" class="power-listing"></div>
+            </div>
+        </div>
+        <!-- Página 2 -->
+        <div id="page2" class="a4-page">
+            <!-- Poderes | Perícias/Vantagens -->
+            <div id="skillsAdvs-powers">
+                <!-- Lista de Poderes -->
+                <div id="power-list-page2" class="power-listing col-7"></div>
+                
+                <!-- Perícias/Vantagens -->
+                <aside id="skills-advs">
+                    <h3>Perícias</h3>
+                    <!-- Perícias -->
+                    <div id="skills" class="col-5">
+                        <header><span>Nome</span></header>
+                        <header><span>Grad.</span></header>
+                        <header><span>Total</span></header>
+                    </div>
+                    <!-- Vantagens -->
+                    <div id="advantages">
+                        <h3>Vantagens</h3>
+                     </div>
+                </aside>
+            </div>
+        </div>
+    </div>
+    
+    <button class="btn btn-primary" onclick="savePDF()">Download PDF</button>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+    <script src="scripts/overflow_tests.js"></script>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
