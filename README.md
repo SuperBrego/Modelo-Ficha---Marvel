@@ -1,1 +1,2 @@
-# Modelo-Ficha--Marvel para Poder Supremo
+# Modelo Ficha • Marvel para Poder Supremo
+Este projeto teve a finalidade de fazer testes na criação de um novo modelo de ficha e algoritmos para melhor impressão possível das características do personagem.
